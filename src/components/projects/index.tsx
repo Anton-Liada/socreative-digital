@@ -3,7 +3,7 @@ import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import "./projects.scss";
 
-const projects = () => {
+const Projects = () => {
   const stickyParentRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -51,4 +51,4 @@ const projects = () => {
     </section>
   );
 };
-export default projects;
+export default Projects;
