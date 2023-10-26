@@ -1,0 +1,45 @@
+@import '../assets/utils/variables.scss';
+@import '../assets/utils/mixins.scss';
+
+.about-section,
+.team-section,
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: $fs-40;
+  font-weight: $fw-800;
+}
+
+.hero-section {
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+.about-section {
+  height: 200vh;
+  background-color: $c-green;
+}
+
+.team-section {
+  background-color: $c-orange-1;
+}
+
+.contact-section {
+  background-color: $c-orange-2;
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 100px;
+}
+
+.navLink {
+  text-decoration: none;
+  font-size: $fs-20;
+  font-weight: $fw-800;
+  @include hover(color, $c-green);
+}

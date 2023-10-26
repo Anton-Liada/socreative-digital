@@ -1,0 +1,29 @@
+@import '../utils/variables';
+@import '../utils/mixins.scss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $ff-roboto;
+  font-size: $fs-16;
+  color: $c-coal;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: $c-grey-2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $c-grey-1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $c-grey-3;
+}
